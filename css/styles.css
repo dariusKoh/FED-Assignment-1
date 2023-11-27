@@ -1,6 +1,10 @@
+html {
+    overflow-x: hidden;
+}
+
 header {
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
 
     top: 0;
     left: 0;
@@ -9,8 +13,7 @@ header {
 nav {
     display: flex;
     flex-direction: row;
-
-    background-color: #0b1114;
+    margin: 0;
     
     align-items: center;
     justify-content: center;
@@ -22,33 +25,26 @@ nav {
     margin: 0;
 
     align-items: center;
+    justify-content: center;
 }
 
 .nav-element {
     display: flex;
-    flex-direction: row;
 
     color: white;
     font-size: 24;
 
-    padding: 0 100;
-    align-items: center;
+    padding: 0 25%;
 }
 
 .nav-element a {
     display: flex;
     height: 50;
+
+    text-decoration: none;
+
     align-items: center;
     justify-content: center;
-    text-decoration:none
-}
-
-.nav-element a:visited{
-    color: white;
-}
-
-.nav-element:hover {
-    background-color: gray;
 }
 
 .nav-element img {
@@ -62,6 +58,19 @@ nav {
     justify-content: center;
 }
 
+.nav-element a:visited{
+    color: white;
+}
+
+.nav-element:hover {
+    background-color: gray;
+}
+
 .main-image {
     margin: 0;
+    max-width: 100%;
+}
+
+#main-image {
+    max-width: 100%;
 }
