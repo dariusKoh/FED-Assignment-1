@@ -61,3 +61,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
+.main-image {
+    margin: 0;
+}
