@@ -71,7 +71,7 @@ nav {
 
 /* Body */
 body {
-    background-color: #040404;
+    background-color: #08070c;
     color: white;
 }
 
@@ -80,33 +80,20 @@ body {
     max-width: 100%;
 }
 
-/* Home Page : Socials */
-
-.socials {
-    
-}
-
 /* Home Page : About */
 #about {
-
+    display: flex;
+    flex-direction: row;
 }
 
+.about-image {
+    border-radius: 50%;
+    max-width: 15vw;
+}
 
+.about-info {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -128,4 +115,72 @@ footer {
     background-color: #040404;
     color: white;
     height: 100;
+}
+
+/* Footer : Socials */
+
+.socials-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    width: fit-content;
+    
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    border-radius: 50%;
+
+    flex: 1 1 0;
+}
+
+.socials-list:hover {
+    background-color: gray;
+}
+
+.socials img {
+    max-width: 25px;
+    width: 75%;
+}
+
+.socials-youtube {
+    max-width: 1vw;
+    max-height: 1vw;
+}
+
+.socials-twitter-x {
+    max-width: 1vw;
+    max-height: 1vw;
+}
+
+.socials-instagram {
+    max-width: 1vw;
+    max-height: 1vw;
+}
+
+.socials-tiktok {
+    max-width: 1vw;
+    max-height: 1vw;
+}
+
+.socials-spotify {
+    max-width: 1vw;
+    max-height: 1vw;
+}
+
+.socials-apple-music {
+    max-width: 1vw;
+    max-height: 1vw;
+}
+
+.socials-nicovideo {
+    max-width: 1vw;
+    max-height: 1vw;
 }
