@@ -2,9 +2,12 @@ html {
     overflow-x: hidden;
 }
 
+/* Navigation Bar */
+
 header {
     position: fixed;
     width: 100%;
+    background-color: #040404;
 
     top: 0;
     left: 0;
@@ -66,15 +69,63 @@ nav {
     background-color: gray;
 }
 
-.main-image {
-    margin: 0;
-    max-width: 100%;
+/* Body */
+body {
+    background-color: #040404;
+    color: white;
 }
 
+/* Home Page : Main Image */
 #main-image {
     max-width: 100%;
 }
 
+/* Home Page : Socials */
+
 .socials {
     
+}
+
+/* Home Page : About */
+#about {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #040404;
+    color: white;
+    height: 100;
 }
