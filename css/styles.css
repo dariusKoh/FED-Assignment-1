@@ -75,6 +75,11 @@ body {
     color: white;
 }
 
+/* Buffer for navigation bar */
+.nav-buffer {
+    height: 50;
+}
+
 /* Home Page : Main Image */
 #main-image {
     width:100%;
@@ -82,8 +87,9 @@ body {
 }
 
 /* Home Page : About */
-#about {
+.about {
     display: flex;
+    flex-direction: column;
 
     padding: 100px;
 
