@@ -1,5 +1,12 @@
-html {
+html, body {
     overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+
+    background-color: #08070c;
+
+    color: white;
+    
 }
 
 /* Navigation Bar */
@@ -66,14 +73,11 @@ nav {
 }
 
 .nav-element:hover {
-    background-color: gray;
+    background-color: #0e274f;
 }
 
 /* Body */
-body {
-    background-color: #08070c;
-    color: white;
-}
+
 
 /* Buffer for navigation bar */
 .nav-buffer {
@@ -144,7 +148,79 @@ body {
     max-width: 75%;
 }
 
+/* Tours */
+.tour {
+    display: flex;
+    flex-direction: column;
 
+    min-height: 70%;
+    margin: 2em 0 6em;
+
+    align-items: center;
+}
+
+.tour h1 {
+    margin: 2em 0;
+}
+
+.tour-list {
+    display: flex;
+    flex-direction: column;
+
+    width: 900;
+    max-width: 60%;
+    gap: 1em;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-item {
+    display: flex;
+    flex-direction: row;
+
+    padding-bottom: 1em;
+
+    width: 100%;
+    border-bottom: 1px solid #0e274f;
+    
+    align-items: flex-start;
+}
+
+.tour-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.tour-info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20em, 20em;
+}
+
+.tour-date {
+    
+}
+
+.tour-location {
+
+}
+
+.tour-country {
+
+}
+
+.tour-more-info {
+    width: 100;
+
+    
+
+    text-align:right;
+
+    text-decoration: none;
+    color: white;
+}
 
 /* Footer */
 footer {
