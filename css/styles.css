@@ -76,9 +76,6 @@ nav {
     background-color: #0e274f;
 }
 
-/* Body */
-
-
 /* Buffer for navigation bar */
 .nav-buffer {
     height: 50;
@@ -214,12 +211,15 @@ nav {
 .tour-more-info {
     width: 100;
 
-    
-
     text-align:right;
 
     text-decoration: none;
     color: white;
+}
+
+/* Shop */
+.shop {
+    
 }
 
 /* Footer */
