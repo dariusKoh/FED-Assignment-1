@@ -112,22 +112,26 @@ body {
 
 /* Footer */
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background-color: #040404;
     color: white;
-    height: 100;
+    height: 250;
 }
 
 /* Footer : Socials */
-
 .socials-list {
-    margin: 0;
-    padding: 0;
     display: flex;
-    
     flex-direction: row;
     align-items: center;
-    width: fit-content;
     
+    margin: 0;
+    padding: 25 25;
+    width: fit-content;
+    gap: 1em;
 }
 
 .socials {
@@ -140,45 +144,48 @@ footer {
 
     background-color: white;
     border-radius: 50%;
-
-    flex: 1 1 0;
 }
 
-.socials:hover {
+/* On hover */
+.socials-list:hover .socials{
     background-color: gray;
 }
 
+.socials:hover {
+    background-color: white !important;
+}
+
 .socials-youtube {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.socials-twitter-x {
     max-width: 16px;
     max-height: 16px;
 }
 
-.socials-twitter-x {
-    max-width: 1vw;
-    max-height: 1vw;
-}
-
 .socials-instagram {
-    max-width: 1vw;
-    max-height: 1vw;
+    max-width: 20px;
+    max-height: 20px;
 }
 
 .socials-tiktok {
-    max-width: 1vw;
-    max-height: 1vw;
+    max-width: 20px;
+    max-height: 20px;
 }
 
 .socials-spotify {
-    max-width: 1vw;
-    max-height: 1vw;
+    max-width: 32px;
+    max-height: 32px;
 }
 
 .socials-apple-music {
-    max-width: 1vw;
-    max-height: 1vw;
+    max-width: 20px;
+    max-height: 20px;
 }
 
 .socials-nicovideo {
-    max-width: 1vw;
-    max-height: 1vw;
+    max-width: 32px;
+    max-height: 32px;
 }
