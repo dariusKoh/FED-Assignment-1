@@ -275,9 +275,7 @@ nav {
 }
 
 .shop-item a:hover {
-
     background-color: #0e274f;
-    
 }
 
 .shop-item-section {
@@ -308,6 +306,92 @@ nav {
 
 .shop-item-price {
     font-size: 14 !important;
+}
+
+/* Music */
+.music {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.album {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 10vw;
+
+    max-width: 1080px;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+
+    width: 33%;
+    padding-right: 7%;
+}
+
+.album-info h1, p {
+    margin: 10;
+    padding: 0;
+}
+
+.album-links {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2em;
+    gap: 2em;
+}
+
+.album-songs {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    width: 60%;
+    min-height: 100%;
+}
+
+.album-song {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    padding: 1em 0 2em;
+
+    border-top: 1px solid #12263f;
+    width: 100%;
+}
+
+.album-song p {
+    width: 90%;
+
+    margin: 0;
+}
+
+.album-artists {
+    margin-top: 1em !important;
+}
+
+.album-song-duration {
+    width: 10% !important;
+
+    text-align:right;
+
+    text-decoration: none;
+    color: white;
+}
+
+.album-footer-buffer {
+    height: 10vw;
 }
 
 /* Footer */
@@ -351,7 +435,7 @@ footer {
 
 /* On hover */
 .socials-list:hover .socials{
-    background-color: gray;
+    background-color: #adadad;
 }
 
 .socials:hover {
