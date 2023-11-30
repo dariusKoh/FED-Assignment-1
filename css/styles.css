@@ -283,6 +283,7 @@ nav {
     flex-wrap: wrap;
 
     justify-content: center;
+    text-align: center;
 
     height: 40%;
 }
@@ -379,6 +380,7 @@ nav {
 
 .album-artists {
     margin-top: 1em !important;
+    color: #cbcbcb;
 }
 
 .album-song-duration {
