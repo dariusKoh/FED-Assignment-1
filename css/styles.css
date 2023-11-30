@@ -9,15 +9,18 @@ html, body {
     flex-direction: column;
 
     color: white;
-    
 }
 
 /* Navigation Bar */
 
 header {
+    display: flex;
     position: fixed;
     width: 100%;
     background-color: #040404;
+
+    align-items: center;
+    justify-content: center;
 
     top: 0;
     left: 0;
@@ -26,7 +29,17 @@ header {
 nav {
     display: flex;
     flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
     margin: 0;
+
+    width: 1000;
     
     align-items: center;
     justify-content: center;
@@ -36,6 +49,8 @@ nav {
     display: flex;
     flex-direction: row;
     margin: 0;
+
+    max-width: 20%;
 
     align-items: center;
     justify-content: center;
@@ -91,11 +106,22 @@ nav {
 }
 
 /* Home Page : About */
+#about {
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px 0;
+    
+
+    justify-content: center;
+    align-items: center;
+}
+
 .about {
     display: flex;
     flex-direction: column;
 
-    padding: 100px;
+    width: 60%;
 
     justify-content: center;
     align-items: center;
@@ -103,16 +129,24 @@ nav {
 
 .about-items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    flex: 100 0 80%;
+
+    justify-content: center;
+
 
     gap: 1.5em 0;
-    max-width: 75%;
+    max-width: 100%;
 }
 
 .profile {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
+    flex: 100 0 80%;
     gap: 0 3em;
 
     justify-content: center;
@@ -122,11 +156,14 @@ nav {
 .about-info {
     display: flex;
     flex-direction: column;
-    
-    font-size: 20;
 
-    max-width: 15vw;
-    min-width: 25%;
+    justify-content: center;
+    
+    font-size: 1.25vw;
+}
+
+.about-info h1 {
+    font-size: 2vw;
 }
 
 .about-image {
@@ -139,13 +176,51 @@ nav {
     display: flex;
 
     min-width: 50%;
+    font-size: 1vw;
 
     justify-content: center;
     align-items: center;
 }
 
 .about-content p {
-    max-width: 75%;
+    max-width: 100%;
+}
+
+@media (max-width: 1080px) {
+    .about {
+        
+        width: 100%;
+    }
+
+    .about-items {
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-image {
+        max-width: 30vw;
+    }
+
+    .about-info {
+        width: 30vw;
+        height: 30vw;
+        font-size: 2vw;
+    }
+
+    .about-info h1 {
+        font-size: 4vw;
+    }
+
+    .profile {
+        width: 80%;
+    }
+
+    .about-content p {
+        width: 80%;
+        font-size: 1.8vw;
+    }
 }
 
 /* Tours */
@@ -336,7 +411,7 @@ nav {
     padding-right: 7%;
 }
 
-.album-info h1, p {
+.album-info h1, .album-info p {
     margin: 10;
     padding: 0;
 }
