@@ -6,9 +6,6 @@ html, body {
 
     background-color: #08070c;
     
-    display: flex;
-    flex-direction: column;
-
     color: white;
 }
 
@@ -98,7 +95,7 @@ nav {
 
 /* Buffer for navigation bar */
 .nav-buffer {
-    height: 50;
+    height: 50px;
 }
 
 /* Home Page : Main Image */
@@ -242,7 +239,7 @@ nav {
     display: flex;
     flex-direction: column;
 
-    width: 900;
+    width: 900px;
     max-width: 60%;
     gap: 1em;
 
@@ -287,12 +284,17 @@ nav {
 }
 
 .tour-more-info {
-    width: 100;
+    width: 100px;
 
-    text-align:right;
+    text-align:center;
 
     text-decoration: none;
     color: white;
+    background-color: #124ab6;
+
+    /* Makes the border radius rounded instead of elliptical*/
+    border-radius: 5% / 10%;
+    padding: 10px;
 }
 
 @media (max-width: 1080px) {
@@ -303,7 +305,7 @@ nav {
 .shop {
     display: flex;
 
-    padding: 2em;
+    padding: 10em 2em;
     
     align-items: center;
     justify-content: center;
@@ -347,7 +349,7 @@ nav {
 
     align-self: flex-end;
     margin: 0 20%;
-    padding: 10;
+    padding: 10px;
 
     /* Makes the border radius rounded instead of elliptical*/
     border-radius: 5% / 10%;
@@ -401,7 +403,7 @@ nav {
     display: flex;
     flex-direction: row;
 
-    margin-top: 10vh;
+    margin-top: 20vh;
 
     max-width: 70%;
     width: 1080px;
@@ -416,7 +418,7 @@ nav {
 }
 
 .album-title h1, .album-title p {
-    margin: 5;
+    margin: 1vh 0;
     padding: 0;
 }
 
@@ -435,7 +437,7 @@ nav {
     justify-content: center;
     align-items: flex-start;
     
-    padding-top: 2em;
+    padding-top: 1vh;
     gap: 2em;
 }
 
@@ -537,6 +539,10 @@ nav {
         max-width: 100% !important;
     }
 
+    .album-title p {
+        font-size: 4vw;
+    }
+
     .album-title h1 {
         font-size: 4vw;
     }
@@ -558,7 +564,7 @@ footer {
 
     background-color: #12263f;
     color: white;
-    height: 250;
+    height: 250px;
 }
 
 /* Footer : Socials */
