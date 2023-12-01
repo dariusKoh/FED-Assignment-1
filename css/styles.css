@@ -162,6 +162,11 @@ nav {
     }
 
     /* Hides the web view logo */
+    .nav-element .logo {
+        display: none;
+        position: absolute;
+    }
+
     .logo {
         display: none;
         position: absolute;
@@ -644,7 +649,7 @@ nav {
     }
 
     .album-title p {
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     .album-title h1 {
