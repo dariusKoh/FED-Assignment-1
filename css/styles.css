@@ -410,8 +410,8 @@ nav {
     padding-right: 7%;
 }
 
-.album-info h1, .album-info p {
-    margin: 10;
+.album-title h1, .album-title p {
+    margin: 5;
     padding: 0;
 }
 
@@ -466,6 +466,55 @@ nav {
 
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 1080px) {
+    .album {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .album-info {
+        flex-direction: row;
+        align-self: flex-start;
+    }
+
+    .album-info img {
+        max-width: 50vw;
+        max-height: 50vw;
+    }
+
+    .album-title {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 2vw;
+        justify-content: center;
+    }
+
+    .album-links {
+        flex-direction: column;
+    }
+
+    .album-links img {
+        max-width: 32px;
+        max-height: 32px;
+    }
+
+    .album-links .socials-apple-music {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .album-songs {
+        margin-top: 5vw;
+        padding: 0;
+        
+        max-width: 100% !important;
+    }
+
+
 }
 
 .album-footer-buffer {
