@@ -434,7 +434,7 @@ nav {
     justify-content: center;
     align-items: center;
     
-    margin-top: 2em;
+    padding-top: 2em;
     gap: 2em;
 }
 
@@ -500,9 +500,11 @@ nav {
         max-height: 50vw;
     }
 
-    .album-title {
+    .album-header {
         display: flex;
         flex-direction: column;
+
+        max-height: 50vw;
 
         margin-left: 2vw;
         justify-content: center;
@@ -510,6 +512,10 @@ nav {
 
     .album-links {
         flex-direction: column;
+    }
+
+    .album-links-row {
+        flex-direction: row;
     }
 
     .album-links img {
