@@ -294,6 +294,10 @@ nav {
     color: white;
 }
 
+@media (max-width: 1080px) {
+    
+}
+
 /* Shop */
 .shop {
     display: flex;
@@ -415,6 +419,14 @@ nav {
     padding: 0;
 }
 
+.album-title h1 {
+    font-size: 2em;
+}
+
+.album-title p {
+    font-size: 1.2em;
+}
+
 .album-links {
     display: flex;
     flex-direction: row;
@@ -514,7 +526,9 @@ nav {
         max-width: 100% !important;
     }
 
-
+    .album-title h1 {
+        font-size: 4vw;
+    }
 }
 
 .album-footer-buffer {
@@ -528,7 +542,7 @@ footer {
     align-items: center;
     justify-content: center;
     
-    
+    margin-top: auto;
     bottom: 0;
 
     background-color: #12263f;
