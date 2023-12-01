@@ -390,7 +390,6 @@ nav {
     display: flex;
     flex-direction: column;
     width: 90%;
-    gap: 20em, 20em;
 }
 
 .tour-date {
@@ -485,7 +484,6 @@ nav {
     display: flex;
     flex-direction: column;
 
-    margin: 10;
     max-width: 80%;
     align-items: center;
     justify-content: center;
@@ -495,11 +493,11 @@ nav {
     padding: 0;
     margin: 0;
 
-    font-size: 18;
+    font-size: 18px;
 }
 
 .shop-item-price {
-    font-size: 14 !important;
+    font-size: 16px !important;
 }
 
 /* Music */
@@ -681,7 +679,6 @@ footer {
     align-items: center;
     
     margin: 0;
-    padding: 25 25;
     width: fit-content;
     gap: 1em;
 }
