@@ -1,65 +1,69 @@
 # FED Assignment 1 - S10255626K - Darius Koh
 
-Creating a website for a band (band unconfirmed).
-
-I plan on building the base design of the website before deciding on the band that i will create the website for.
+Creating a website for a Japanese singer: Ado.
  
 ## Design Process
- 
-Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+As someone who did not really look at content from Ado much, I decided to explore artists that I typically did not listen to, so as to look for different kinds of music to enjoy.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory)
-Include the Adobe XD wireframe as a folder. You can include the XD share url. 
+Eventually, I decided to base my website around Ado, as I enjoyed a few of her songs, but never listened to her music much.
+
+When thinking about what to include in my website, I thought of what someone who did not know the artist would like to find out:
+- Who exactly is Ado?
+- What genre does she perform in?
+- What are some of her songs?
+- Does she have any tours near me?
 
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+- A home screen that scrolls down to an about me section
+- A page to show all current tours (Ado's world tour hasn't been announced at the time of writing, so I entered placholder values)
+- A page to show all her current songs (that I found on spotify, as many Japanses artists may not post all their songs there, the list may be incomplete)
+- A demo shop, with dummy blank items
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
-- Another feature idea
+In the future, if I decide to pick this project back up again, I may be able to build:
+- A working shopping cart (I tried making it, but ran into many issues so I scrapped the idea.)
+- More working links and linking to all her shows (Can use an API connection)
 
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- HTML - Base Website Structure
+- CSS - Design and Styling + Animations
+- JavaScript - Logic
+- AdobeXD - Wireframe
+- Visual Studio Code - Programming
+- GitHub - Version Control and Hosting
 
 
 ## Testing
+Mobile View (1080px Screen Width and below)
+- Hamburger Menu
+- Everything should be in columns
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Desktop / Web View (1080px Screen Width and above)
+- Elements should scale to window size
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- https://en.wikipedia.org/wiki/Ado_(singer)
+- https://jpop.fandom.com/wiki/Ado
 
 ### Media
 - The photos used in this site were obtained from ...
-
-### Acknowledgements
-
-- I received inspiration for this project from X
+- https://about.twitter.com/en/who-we-are/brand-toolkit
+- https://www.edigitalagency.com.au/youtube/new-youtube-icon-black-png/
+- https://www.vecteezy.com/png/18930579-spotify-app-logo-png-spotify-icon-transparent-png
+- https://developers.tiktok.com/doc/getting-started-design-guidelines?enter_method=left_navigation
+- https://about.meta.com/brand/resources/instagram/instagram-brand/
+- https://www.youtube.com/channel/UCln9P4Qm3-EAY4aiEPmRwEA
+- https://ado-dokidokihimitsukichi-daigakuimo.com/
+- https://www.universal-music.co.jp/ado/
