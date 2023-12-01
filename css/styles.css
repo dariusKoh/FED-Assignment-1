@@ -15,7 +15,9 @@ header {
     display: flex;
     position: fixed;
 
+    max-width: 100%;
     width: 100%;
+
     background-color: #040404;
 
     align-items: center;
@@ -47,11 +49,13 @@ nav {
 .nav-items {
     display: flex;
     flex-direction: row;
+
     margin: 0;
+    padding: 0;
 
-    max-width: 20%;
+    max-width: 30%;
+    width: 100%;
 
-    align-items: center;
     justify-content: center;
 }
 
@@ -60,8 +64,12 @@ nav {
 
     color: white;
     font-size: 1.5em;
+    max-width: 20%;
+    width: 100%;
 
     padding: 0 25%;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-element a {
@@ -96,6 +104,126 @@ nav {
 /* Buffer for navigation bar */
 .nav-buffer {
     height: 50px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+}
+
+.mobile-logo {
+    display: none;
+}
+
+.bar {
+    display: block;
+
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    background-color: #ffffff;
+}
+
+
+@media (max-width: 1080px) {
+    .navbar {
+        justify-content: flex-start;
+        padding-left: 15px;
+
+        height: 50px;
+    }
+
+    .nav-items {
+        position: fixed;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+        left: 5rem;
+        top: -1000%;
+
+        max-width: 100%;
+        max-height: 100%;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        transition: 0.5s;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .nav-items.active {
+        top: 0;
+        left: 0;
+    }
+
+    .nav-element {
+        margin: 2.5rem 0;
+    }
+
+    .logo {
+        display: none;
+        position: absolute;
+    }
+
+    .mobile-logo {
+        display: flex;
+        margin: auto;
+        padding: 0;
+
+        max-width: 20%;
+        width: 100px;
+
+        align-self: center;
+        justify-self: center;
+    }
+
+    .mobile-logo img {
+        display: flex;
+
+        margin: 0;
+        width: 100px;
+        padding: 0;
+
+        align-self: center;
+        justify-self: center;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        cursor: pointer;
+    }
+
+    .bar {
+        margin: 2.5px auto;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
 
 /* Home Page : Main Image */
