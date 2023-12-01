@@ -5,7 +5,7 @@ html, body {
     min-height: 100vh;
 
     background-color: #08070c;
-    display: flex;
+    
     flex-direction: column;
 
     color: white;
@@ -400,7 +400,7 @@ nav {
     display: flex;
     flex-direction: row;
 
-    margin-top: 10vw;
+    margin-top: 10vh;
 
     max-width: 70%;
     width: 1080px;
@@ -485,6 +485,9 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        padding: 0;
+        margin-top: 10vh;
     }
 
     .album-info {
