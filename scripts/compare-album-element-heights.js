@@ -4,11 +4,11 @@ function CompareHeights(container, links, title) {
         let contH = container[i].offsetHeight;
         let childH = links[i].offsetHeight + title[i].offsetHeight;
 
-        console.log(childH, contH)
-
         // changes class so that it converts to row
         if (contH < childH){
             links[i].className = 'album-links album-links-row';
+            console.log(1)
+            continue;
         }
     }
 }
