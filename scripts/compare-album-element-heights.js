@@ -1,6 +1,6 @@
 function CompareHeights(container, links, title) {
     for (var i = 0; i < container.length; i++) {
-        // changes 
+        // Gets height of object and stores it
         let contH = container[i].offsetHeight;
         let childH = links[i].offsetHeight + title[i].offsetHeight;
 
@@ -13,9 +13,15 @@ function CompareHeights(container, links, title) {
     }
 }
 
+// Runs the command to compare heights everytime the window is resized
 var timeId = null;
+// Checks if window is resized
 window.addEventListener('resize', () => {
+    // Clears TimeOut to execute the code
     clearTimeout(timeId);
-    timeId = setTimeout(CompareHeights(document.getElementsByClassName("album-info"), document.getElementsByClassName("album-links"), document.getElementsByClassName("album-title")), 1000);
-});
 
+    // Prevents code from running and taking up too much memory
+    timeId = setTimeout(CompareHeights(document.getElementsByClassName("album-info"), 
+    document.getElementsByClassName("album-links"), 
+    document.getElementsByClassName("album-title")), 1000);
+});
