@@ -432,7 +432,7 @@ nav {
     flex-direction: row;
 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     
     padding-top: 2em;
     gap: 2em;
@@ -516,6 +516,7 @@ nav {
 
     .album-links-row {
         flex-direction: row;
+        padding: 0;
     }
 
     .album-links img {
